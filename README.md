@@ -1,27 +1,46 @@
-# Todo
+# Todolist(Angular)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
+### 在終端機使用Angular命令列介面(CLI)產生、建置、測試、佈署Angular的應用程式。
 
-## Development server
+ 開啟終端機輸入:
+> D:\todolist_skyChang>npm install -g @angular/cli
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+若要使用Angular命令列的指令為ng開頭，接著輸入要執行的CLI指令。
 
-## Code scaffolding
+將cmd路徑指向創建的資料夾，使用ng new 指令建立todo的應用程式。
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> D:\todolist_skyChang>ng new todo --routing=false --style=css
 
-## Build
+則會開始建立一個初始的Angular應用程式。
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* --routing: 導向至...路徑
+* --style: 樣式
 
-## Running unit tests
+## 開啟專案
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+使用cmd開啟專案。
+> D:\todolilst_skyChang>cd todo
 
-## Running end-to-end tests
+## 執行專案
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+使用 ng serve 執行 todolist_skyChang 應用程式。
+> D:\todolilst_skyChang\cd todo>ng serve
 
-## Further help
+## 開啟 server 
+`http://localhost:4200/`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+※若當前正在執行ng serve時，需另開終端機來執行其他指令。
+
+## Angular應用程式 CLI產生的檔案
+
+* app.module.ts : 指定應用程序使用的文件。該文件充當應用程序中其他文件的中心點。
+* app.component.ts : class, 包含主頁面的邏輯應用。
+* app.component.html : 包含AppComponent的HTML。該檔案則會顯示在瀏覽器看到的畫面。
+* app.component.css : 特定元件的樣式，不建議放入將整個應用程式的樣式。
+* app.component.spec.ts : 用於元件測試的文件。
+
+本結構將邏輯、介面、樣式分開，增加維護性和延展性。
+
+
+
+
